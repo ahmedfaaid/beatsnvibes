@@ -1,21 +1,26 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import './index.css';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Nav from '../components/Nav/Nav';
+import Featured from '../components/Featured/Featured';
+import Home from '../components/Home/Home';
+import Footer from '../components/Footer/Footer';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+	<Layout>
+		<SEO title='Home' />
+		<Nav />
+		<Featured />
+		<Home />
+		<Link to='/blog' className='Viewmore'>
+			View More
+		</Link>
+		<Footer />
+	</Layout>
+);
 
-export default IndexPage
+export default IndexPage;

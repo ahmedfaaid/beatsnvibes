@@ -1,0 +1,113 @@
+.Contact__header {
+	background-image: url('../images/skullector-dj-8.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 580px;
+	width: 100vw;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50%;
+	z-index: -1;
+}
+
+.Contact__header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(10, 10, 10, 0.6) 0%,
+		rgba(10, 10, 10, 0.8) 60%,
+		rgba(10, 10, 10, 1) 100%
+	);
+}
+
+.Contact__section {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 100px auto 100px;
+}
+
+.Contact__form {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+	grid-column: 2 / span 4;
+	grid-row-start: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 60px;
+	margin: 60px 0;
+}
+
+.Contact__form h1 {
+	text-align: center;
+}
+
+.Field {
+	margin-bottom: 50px;
+}
+
+.Field__hidden {
+	display: none;
+}
+
+.Field input,
+.Field textarea {
+	width: 100%;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	transition: all 0.3s ease 0s;
+	font-family: Muli, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.Field input {
+	height: 40px;
+}
+
+.Field label {
+	font-family: Muli, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+}
+
+.Field input:focus,
+.Field textarea:focus {
+	border-bottom: 1px solid #f06666;
+}
+
+.Submit {
+	text-align: center;
+	padding: 0;
+	margin: 30px 0;
+}
+
+@media screen and (max-width: 800px) {
+	.Contact__form {
+		grid-column: 1 / span 6;
+		grid-row-start: 2;
+	}
+}
+
+.Contact__thanks {
+	height: 580px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}

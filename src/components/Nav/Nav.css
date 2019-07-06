@@ -1,0 +1,40 @@
+.Nav {
+	transform: translateY(100px);
+	margin-top: -120px;
+}
+
+.Nav__items {
+	background-color: transparent;
+	border: none;
+	height: 80px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.Nav__item--left {
+	margin-right: auto;
+}
+
+.Nav__item--logo {
+	height: 80px;
+}
+
+.Nav__item--link {
+	font-family: Muli, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	transition: all 0.3 ease 0s;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.Nav__item--link:hover {
+	color: #f06666;
+}
+
+.active {
+	color: #f06666;
+}
