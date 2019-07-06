@@ -1,0 +1,67 @@
+.About__hero {
+	background-image: url('../images/skullector-dj-8.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 460px;
+	width: 100vw;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.About__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 460px;
+}
+
+.About__title {
+	text-align: center;
+	max-width: 960px;
+}
+
+.About__wrapper {
+	width: 100vw;
+	background-color: #fff;
+	left: 50%;
+	right: 50%;
+	position: absolute;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.About__content {
+	max-width: 50%;
+	margin: 60px auto;
+	padding: 0 10%;
+	text-align: center;
+}
+
+.About__content h1 {
+	color: #0a0a0a;
+}
+
+.About__content p {
+	font-family: Muli, sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+	color: #0a0a0a;
+	margin: 40px 0;
+}
+
+.About__content ul {
+	padding-inline-start: 0 !important;
+}
+
+.About__content ul li {
+	color: #0a0a0a;
+	list-style: none;
+}

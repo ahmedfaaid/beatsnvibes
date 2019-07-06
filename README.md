@@ -2,6 +2,8 @@
 
 Beats'n'Vibes is a fictional dj blog built using Gatsby
 
+[Deployed](https://objective-wozniak-6dbb27.netlify.com)
+
 ### Technologies/Libraries
 
 - GatsbyJs
